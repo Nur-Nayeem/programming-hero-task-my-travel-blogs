@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    background: gray;
+}
+
+.seocnd-nav{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    height: 50px;
+    background: blueviolet;
+    padding: 20px;
+}
+
+li{
+    list-style: none;
+}
+li>a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease-in-out ;
+}
+li>a:hover{
+    color: tomato;
+}
+li > a.active {
+    color: tomato; 
+}
+
+.list-cards-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    background: whitesmoke;
+    padding: 10px;
+}
+
+.card{
+    height: 450px;
+    width: 340px;
+    margin: 10px;
+    padding: 20px;
+    position: relative;
+    background-color: aquamarine;
+    border-radius: 5px;
+    border: none;
+}
+
+.read-more{
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: royalblue;
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 400px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out ;
+}
+
+.read-more:hover{
+    background-color: blue;
+}
+
+.next-prev-page{
+    padding: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-change-button{
+    text-decoration: none;
+}
+.page-change-button{
+    display: flex;
+    gap: 4px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: green;
+}
+footer{
+    display: flex;
+    background-color: gray;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
